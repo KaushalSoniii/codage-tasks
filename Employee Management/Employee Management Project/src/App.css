@@ -1,0 +1,195 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background: #f6f8fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.app-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+h1 {
+  color: #2d3a4a;
+  margin-bottom: 24px;
+}
+
+.employee-form {
+  margin-bottom: 32px;
+  background: #f2f6fc;
+  padding: 20px 16px 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(60,60,60,0.04);
+}
+
+.employee-form h2 {
+  margin-bottom: 16px;
+  color: #3a4d63;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.employee-form input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #cfd8dc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff;
+  color: #222; 
+  transition: border 0.2s;
+}
+
+.employee-form input:focus {
+  border: 1.5px solid #1976d2;
+  outline: none;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.employee-form button,
+.edit-btn,
+.delete-btn {
+  padding: 7px 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.employee-form button[type="submit"] {
+  background: #1976d2;
+  color: #fff;
+}
+
+.employee-form .cancel-btn {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.employee-form button[type="submit"]:hover {
+  background: #1251a3;
+}
+
+.employee-form .cancel-btn:hover {
+  background: #bdbdbd;
+}
+
+.employee-table-container {
+  margin-top: 16px;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(60,60,60,0.04);
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 12px 10px;
+  text-align: left;
+  color: #222; 
+}
+
+.employee-table th {
+  background: #e3eaf4;
+  color: #2d3a4a;
+  font-weight: 600;
+}
+
+.employee-table tr:nth-child(even) {
+  background: #f7fafd;
+}
+
+.edit-btn {
+  background: #ffb300;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.edit-btn:hover {
+  background: #ff9800;
+}
+
+.delete-btn {
+  background: #e53935;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px 2px;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .employee-table th,
+  .employee-table td {
+    padding: 8px 4px;
+    font-size: 0.95rem;
+  }
+}
